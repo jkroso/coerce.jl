@@ -1,4 +1,4 @@
-@require "."
+@require "." coerce
 
-@test coerce(FloatingPoint, 1) === 1.0
-@test coerce((n::FloatingPoint)->n)(1) === 1.0
+@test coerce(AbstractFloat, 1) === 1.0
+@test coerce((n::AbstractFloat)->n)(1) === 1.0
